@@ -1,0 +1,7 @@
+Index,first_name,last_name,email,age
+0,Corey,Schafer,corey@email.com,33
+1,Jane,Doe,jane@email.com,55
+2,John,Doe,,63
+3,,Anonymous,anon@email.com,36
+4,,,,
+5,NA,Missing,NA,Missing
