@@ -1,0 +1,8 @@
+# Block the local environment and Git history
+.venv/
+__pycache__/
+.git/
+
+# Block the heavy R&D and concept folders to prevent container bloat
+concepts/
+90-days-Sprint/

@@ -54,7 +54,11 @@ def run_log_analytics(clean_file):
     axes[1].set_ylabel('')
 
     plt.tight_layout()
-    plt.show()
+    # Remove or comment out plt.show()
+    # plt.show() 
+    # Add this to save the chart as a high-resolution PNG image
+    plt.savefig('server_analytics_dashboard.png', dpi=300, bbox_inches='tight')
+    print("✅ Visualizations saved as 'server_analytics_dashboard.png'")
 
 # ==========================================
 # MASTER EXECUTION TRIGGER
