@@ -13,8 +13,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 5. The Surgical Payload
 COPY projects/ ./projects/
 
-# --- THE FIX: Teleport inside the projects folder before ignition ---
-WORKDIR /app/projects
+# --- NEW: Open the Front Door ---
+# This punches a hole in the container so web traffic can get in
+EXPOSE 8000
 
-# 6. The Trigger
-CMD ["python", "week01_log-aggregator.py"]
+# 6. The Ignition Switch
+# We no longer run the Week 1 script. We boot up the Week 3 API server.
+CMD ["python", "projects/week03_api.py"]
